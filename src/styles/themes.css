@@ -1,0 +1,391 @@
+.theme1 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme1 .form-group.icon::before {
+    color: #3a7bd5;
+    opacity: 0.7; }
+  .theme1 .form-control:focus {
+    border-color: #3a7bd5;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme1 #login .btn-primary:not(.facebook), .theme1 #signup .btn-primary:not(.facebook), .theme1 #recover-password .btn-primary:not(.facebook) {
+      color: #3a7bd5; } }
+  .theme1 .btn.btn-primary {
+    background: #3a7bd5; }
+    .theme1 .btn.btn-primary:hover, .theme1 .btn.btn-primary :focus {
+      background: #00d2ff; }
+  .theme1 .btn.btn-rounded {
+    border: 2px solid #3a7bd5;
+    background: #3a7bd5; }
+    .theme1 .btn.btn-rounded:hover, .theme1 .btn.btn-rounded :focus {
+      background: #00d2ff;
+      border: 2px solid #00d2ff; }
+    .theme1 .btn.btn-rounded.clear {
+      border: 2px solid #3a7bd5 !important;
+      background: transparent;
+      color: #3a7bd5; }
+      .theme1 .btn.btn-rounded.clear:hover, .theme1 .btn.btn-rounded.clear :focus {
+        background: #3a7bd5;
+        color: #fff; }
+        .theme1 .btn.btn-rounded.clear:hover.negative, .theme1 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme1 .btn.btn-pill.btn-color-1 {
+    background: #3a7bd5 !important; }
+    .theme1 .btn.btn-pill.btn-color-1:hover {
+      background: #FFCB3C !important; }
+  .theme1 .spinner:before {
+    border-top-color: #3a7bd5;
+    border-bottom-color: #3a7bd5; }
+  .theme1 .bg-1 {
+    background: #3a7bd5 !important; }
+  .theme1 .bg-2 {
+    background: #00d2ff !important; }
+  .theme1 .bd-1 {
+    border-color: #3a7bd5 !important; }
+  .theme1 .color-1 {
+    color: #3a7bd5 !important; }
+  .theme1 .fc-1 {
+    color: #3a7bd5 !important; }
+  .theme1 .gradient-2-1 {
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme1 .hover-bd-1:hover {
+    border-color: #3a7bd5 !important; }
+
+.theme2 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme2 .form-group.icon::before {
+    color: #f46b45;
+    opacity: 0.7; }
+  .theme2 .form-control:focus {
+    border-color: #f46b45;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme2 #login .btn-primary:not(.facebook), .theme2 #signup .btn-primary:not(.facebook), .theme2 #recover-password .btn-primary:not(.facebook) {
+      color: #f46b45; } }
+  .theme2 .btn.btn-primary {
+    background: #f46b45; }
+    .theme2 .btn.btn-primary:hover, .theme2 .btn.btn-primary :focus {
+      background: #eea849; }
+  .theme2 .btn.btn-rounded {
+    border: 2px solid #f46b45;
+    background: #f46b45; }
+    .theme2 .btn.btn-rounded:hover, .theme2 .btn.btn-rounded :focus {
+      background: #eea849;
+      border: 2px solid #eea849; }
+    .theme2 .btn.btn-rounded.clear {
+      border: 2px solid #f46b45 !important;
+      background: transparent;
+      color: #f46b45; }
+      .theme2 .btn.btn-rounded.clear:hover, .theme2 .btn.btn-rounded.clear :focus {
+        background: #f46b45;
+        color: #fff; }
+        .theme2 .btn.btn-rounded.clear:hover.negative, .theme2 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme2 .btn.btn-pill.btn-color-1 {
+    background: #f46b45 !important; }
+    .theme2 .btn.btn-pill.btn-color-1:hover {
+      background: #BFC0C6 !important; }
+  .theme2 .spinner:before {
+    border-top-color: #f46b45;
+    border-bottom-color: #f46b45; }
+  .theme2 .bg-1 {
+    background: #f46b45 !important; }
+  .theme2 .bg-2 {
+    background: #eea849 !important; }
+  .theme2 .bd-1 {
+    border-color: #f46b45 !important; }
+  .theme2 .color-1 {
+    color: #f46b45 !important; }
+  .theme2 .fc-1 {
+    color: #f46b45 !important; }
+  .theme2 .gradient-2-1 {
+    background: #eea849;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f46b45, #eea849);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f46b45, #eea849);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme2 .hover-bd-1:hover {
+    border-color: #f46b45 !important; }
+
+.theme3 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme3 .form-group.icon::before {
+    color: #f83600;
+    opacity: 0.7; }
+  .theme3 .form-control:focus {
+    border-color: #f83600;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme3 #login .btn-primary:not(.facebook), .theme3 #signup .btn-primary:not(.facebook), .theme3 #recover-password .btn-primary:not(.facebook) {
+      color: #f83600; } }
+  .theme3 .btn.btn-primary {
+    background: #f83600; }
+    .theme3 .btn.btn-primary:hover, .theme3 .btn.btn-primary :focus {
+      background: #fe8c00; }
+  .theme3 .btn.btn-rounded {
+    border: 2px solid #f83600;
+    background: #f83600; }
+    .theme3 .btn.btn-rounded:hover, .theme3 .btn.btn-rounded :focus {
+      background: #fe8c00;
+      border: 2px solid #fe8c00; }
+    .theme3 .btn.btn-rounded.clear {
+      border: 2px solid #f83600 !important;
+      background: transparent;
+      color: #f83600; }
+      .theme3 .btn.btn-rounded.clear:hover, .theme3 .btn.btn-rounded.clear :focus {
+        background: #f83600;
+        color: #fff; }
+        .theme3 .btn.btn-rounded.clear:hover.negative, .theme3 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme3 .btn.btn-pill.btn-color-1 {
+    background: #f83600 !important; }
+    .theme3 .btn.btn-pill.btn-color-1:hover {
+      background: #f1c40f !important; }
+  .theme3 .spinner:before {
+    border-top-color: #f83600;
+    border-bottom-color: #f83600; }
+  .theme3 .bg-1 {
+    background: #f83600 !important; }
+  .theme3 .bg-2 {
+    background: #fe8c00 !important; }
+  .theme3 .bd-1 {
+    border-color: #f83600 !important; }
+  .theme3 .color-1 {
+    color: #f83600 !important; }
+  .theme3 .fc-1 {
+    color: #f83600 !important; }
+  .theme3 .gradient-2-1 {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme3 .hover-bd-1:hover {
+    border-color: #f83600 !important; }
+
+.theme4 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme4 .form-group.icon::before {
+    color: #EB3349;
+    opacity: 0.7; }
+  .theme4 .form-control:focus {
+    border-color: #EB3349;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme4 #login .btn-primary:not(.facebook), .theme4 #signup .btn-primary:not(.facebook), .theme4 #recover-password .btn-primary:not(.facebook) {
+      color: #EB3349; } }
+  .theme4 .btn.btn-primary {
+    background: #EB3349; }
+    .theme4 .btn.btn-primary:hover, .theme4 .btn.btn-primary :focus {
+      background: #F45C43; }
+  .theme4 .btn.btn-rounded {
+    border: 2px solid #EB3349;
+    background: #EB3349; }
+    .theme4 .btn.btn-rounded:hover, .theme4 .btn.btn-rounded :focus {
+      background: #F45C43;
+      border: 2px solid #F45C43; }
+    .theme4 .btn.btn-rounded.clear {
+      border: 2px solid #EB3349 !important;
+      background: transparent;
+      color: #EB3349; }
+      .theme4 .btn.btn-rounded.clear:hover, .theme4 .btn.btn-rounded.clear :focus {
+        background: #EB3349;
+        color: #fff; }
+        .theme4 .btn.btn-rounded.clear:hover.negative, .theme4 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme4 .btn.btn-pill.btn-color-1 {
+    background: #EB3349 !important; }
+    .theme4 .btn.btn-pill.btn-color-1:hover {
+      background: #2ebd59 !important; }
+  .theme4 .spinner:before {
+    border-top-color: #EB3349;
+    border-bottom-color: #EB3349; }
+  .theme4 .bg-1 {
+    background: #EB3349 !important; }
+  .theme4 .bg-2 {
+    background: #F45C43 !important; }
+  .theme4 .bd-1 {
+    border-color: #EB3349 !important; }
+  .theme4 .color-1 {
+    color: #EB3349 !important; }
+  .theme4 .fc-1 {
+    color: #EB3349 !important; }
+  .theme4 .gradient-2-1 {
+    background: #F45C43;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EB3349, #F45C43);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EB3349, #F45C43);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme4 .hover-bd-1:hover {
+    border-color: #EB3349 !important; }
+
+.theme5 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme5 .form-group.icon::before {
+    color: #642B73;
+    opacity: 0.7; }
+  .theme5 .form-control:focus {
+    border-color: #642B73;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme5 #login .btn-primary:not(.facebook), .theme5 #signup .btn-primary:not(.facebook), .theme5 #recover-password .btn-primary:not(.facebook) {
+      color: #642B73; } }
+  .theme5 .btn.btn-primary {
+    background: #642B73; }
+    .theme5 .btn.btn-primary:hover, .theme5 .btn.btn-primary :focus {
+      background: #C6426E; }
+  .theme5 .btn.btn-rounded {
+    border: 2px solid #642B73;
+    background: #642B73; }
+    .theme5 .btn.btn-rounded:hover, .theme5 .btn.btn-rounded :focus {
+      background: #C6426E;
+      border: 2px solid #C6426E; }
+    .theme5 .btn.btn-rounded.clear {
+      border: 2px solid #642B73 !important;
+      background: transparent;
+      color: #642B73; }
+      .theme5 .btn.btn-rounded.clear:hover, .theme5 .btn.btn-rounded.clear :focus {
+        background: #642B73;
+        color: #fff; }
+        .theme5 .btn.btn-rounded.clear:hover.negative, .theme5 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme5 .btn.btn-pill.btn-color-1 {
+    background: #642B73 !important; }
+    .theme5 .btn.btn-pill.btn-color-1:hover {
+      background: #2ebd59 !important; }
+  .theme5 .spinner:before {
+    border-top-color: #642B73;
+    border-bottom-color: #642B73; }
+  .theme5 .bg-1 {
+    background: #642B73 !important; }
+  .theme5 .bg-2 {
+    background: #C6426E !important; }
+  .theme5 .bd-1 {
+    border-color: #642B73 !important; }
+  .theme5 .color-1 {
+    color: #642B73 !important; }
+  .theme5 .fc-1 {
+    color: #642B73 !important; }
+  .theme5 .gradient-2-1 {
+    background: #C6426E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #642B73, #C6426E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #642B73, #C6426E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme5 .hover-bd-1:hover {
+    border-color: #642B73 !important; }
+
+.theme6 {
+  /*/*****************************************************************************
+  // colors
+  //*****************************************************************************/ }
+  .theme6 .form-group.icon::before {
+    color: #25a74c;
+    opacity: 0.7; }
+  .theme6 .form-control:focus {
+    border-color: #25a74c;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $color1; */
+    -webkit-box-shadow: 0 !important;
+    box-shadow: inset 0 0px 0px transparent, 0 0 0px transparent !important; }
+  @media (max-width: 480px) {
+    .theme6 #login .btn-primary:not(.facebook), .theme6 #signup .btn-primary:not(.facebook), .theme6 #recover-password .btn-primary:not(.facebook) {
+      color: #25a74c; } }
+  .theme6 .btn.btn-primary {
+    background: #25a74c; }
+    .theme6 .btn.btn-primary:hover, .theme6 .btn.btn-primary :focus {
+      background: #1ed760; }
+  .theme6 .btn.btn-rounded {
+    border: 2px solid #25a74c;
+    background: #25a74c; }
+    .theme6 .btn.btn-rounded:hover, .theme6 .btn.btn-rounded :focus {
+      background: #1ed760;
+      border: 2px solid #1ed760; }
+    .theme6 .btn.btn-rounded.clear {
+      border: 2px solid #25a74c !important;
+      background: transparent;
+      color: #25a74c; }
+      .theme6 .btn.btn-rounded.clear:hover, .theme6 .btn.btn-rounded.clear :focus {
+        background: #25a74c;
+        color: #fff; }
+        .theme6 .btn.btn-rounded.clear:hover.negative, .theme6 .btn.btn-rounded.clear :focus.negative {
+          border: 2px solid #ccc !important;
+          background: #ccc;
+          color: #fff; }
+  .theme6 .btn.btn-pill.btn-color-1 {
+    background: #25a74c !important; }
+    .theme6 .btn.btn-pill.btn-color-1:hover {
+      background: #2ebd59 !important; }
+  .theme6 .spinner:before {
+    border-top-color: #25a74c;
+    border-bottom-color: #25a74c; }
+  .theme6 .bg-1 {
+    background: #25a74c !important; }
+  .theme6 .bg-2 {
+    background: #1ed760 !important; }
+  .theme6 .bd-1 {
+    border-color: #25a74c !important; }
+  .theme6 .color-1 {
+    color: #25a74c !important; }
+  .theme6 .fc-1 {
+    color: #25a74c !important; }
+  .theme6 .gradient-2-1 {
+    background: #1ed760;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #25a74c, #1ed760);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #25a74c, #1ed760);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .theme6 .hover-bd-1:hover {
+    border-color: #25a74c !important; }
+
+/*# sourceMappingURL=themes.css.map */

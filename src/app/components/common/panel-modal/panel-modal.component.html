@@ -1,0 +1,9 @@
+<div class="overlay animated ">
+	<div class="main-container center-items">
+		<!-- *************************** BOTON CERRAR *************************** -->
+		<i title="Cerrar" (click)="closeModal()" class="animation-all icon-close mdi mdi-close"></i>
+		<!-- *********************** TRANSCLUSION DEL CONTENIDO *********************** -->
+		{{triget}}
+		<ng-content></ng-content>
+	</div>
+</div>

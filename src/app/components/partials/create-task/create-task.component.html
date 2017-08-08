@@ -1,0 +1,40 @@
+<div class="body">
+    <h3 class="fc-1">Crear una nueva tarea</h3>
+    <!-- ================== MENSAJES DE ERROR ==================== -->
+    <div *ngIf="error" class="alert alert-danger">
+        <!-- <ul *ngFor="let e of error">
+          <li>{{e}}</li>
+        </ul> -->
+        <span>{{error}}</span>
+        <i class="icon-close mdi mdi-close " (click)="closeError()"></i>
+    </div>
+    <div *ngIf="success" class="alert alert-success">
+        <span>{{success}}</span>
+        <i class="icon-close mdi mdi-close " (click)="closeSuccess()"></i>
+    </div>
+    <form name="form" (ngSubmit)="login()" #f="ngForm" novalidate>
+    	<p class="fc-smooth">Nombre de la tarea.</p>
+        <div class="form-group icon calendar pos-relative">
+            <input type="text" class="form-control " name="name" [(ngModel)]="model.name" #name="ngModel" required placeholder="*Nombre de la tarea">
+        </div>
+        <p class="fc-smooth">Prioridad de la tarea.</p>
+        <div class="form-group icon priority pos-relative wid-100 inline-b">
+            <div class="nativeDropdown input-type" >
+                <div class="selectDropdown hover-bd-1">
+                    <select [(ngModel)]="model.priority" [ngModelOptions]="{standalone: true}" id="priority" name="priority" class="">
+                        <option *ngFor="let i of priorities" [ngValue]="i">{{i}}</option>
+                    </select>
+                    <div class="custom-select" aria-hidden="true">{{model.priority ? model.priority : 'Prioridad de la tarea'}}</div>
+                </div>
+            </div>
+        </div>
+        <p class="fc-smooth">Fecha de vencimiento.</p>
+        <div class="form-group icon time pos-relative">
+            <input [disabled]="loading" type="text" class="form-control password-field" name="due_date" [(ngModel)]="model.due_date" #due_date="ngModel" required placeholder="*Fecha de vencimiento">
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" (click)="createTask()" class="btn btn-primary col-xs-12 col-md-6 btn-rounded btn-slim">{{loading ? 'Procesando...' : 'Crear tarea'}}</button>
+        </div>
+    </form>
+</div>
+<tda-loader class="fadeOut" [text]="'Procesando...'" [position]="'absolute'" [background]="'rgba(255,255,255,0.7)'"  *ngIf="loading"></tda-loader>

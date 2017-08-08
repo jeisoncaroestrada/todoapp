@@ -1,0 +1,43 @@
+<div id="login">
+    <div id="wrap" class="gradient-2-1 center-items">
+        <div class="container-wrap center-items">
+            <div class="content">
+                <!-- =================== TITULO PRINCIPAL ===================== -->
+                <div class="header center-items">
+                    <h1 (click)="goTo('/')" class="form-brand-text animation-all" >{{mainTitle}}</h1>
+                </div>
+                <div class="body">
+                    <h3 class="fc-1 center-text">Iniciar sesión</h3>
+                    <!-- ================== MENSAJES DE ERROR ==================== -->
+                    <div *ngIf="error" class="alert alert-danger">
+                        <!-- <ul *ngFor="let e of error">
+                          <li>{{e}}</li>
+                        </ul> -->
+                        <span>{{error}}</span>
+                        <i class="icon-close mdi mdi-close " (click)="closeError()"></i>
+                    </div>
+                    <!-- =================== Formulario Inicio de sesión ========== -->
+                    <form name="form" (ngSubmit)="login()" #f="ngForm" novalidate>
+                        <div class="form-group icon email pos-relative">
+                            <input [disabled]="loading" type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required  placeholder="Correo electónico">
+                        </div>
+                        <div class="form-group icon password pos-relative">
+                            <input [disabled]="loading" type="{{passwordType}}" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Contraseña">
+                            <i *ngIf="passwordType == 'password'" title="Mostrar contraseña" class="icon-show-password mdi mdi-eye " (click)="switchPassword()"></i>
+                            <i *ngIf="passwordType == 'text'" title="Ocultar contraseña" class="icon-show-password mdi mdi-eye-off " (click)="switchPassword()"></i>
+                        </div>
+                        <div class="form-group">
+                            <button [disabled]="loading" class="btn btn-primary wid-100">{{loading ? 'Procesando...' : 'Iniciar sesión'}}</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- ====================== LINK REGISTRO ========================= -->
+                <div class="footer">
+                    <div class="new-account">
+                        <a (click)="goTo('/signup')">Aún no estás registrado? <b>Regístrate aquí!</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

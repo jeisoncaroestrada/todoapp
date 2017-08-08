@@ -1,0 +1,21 @@
+<!-- ***************************  PORTADA *************************** -->
+<!-- *********************************************************************** -->
+<tda-profile-cover></tda-profile-cover>
+<!-- *************************** FOTO DE PERFIL *************************** -->
+<!-- *********************************************************************** -->
+<div class="avatar-container center-items wid-100">
+	<div class="avatar">
+		<tda-profile-avatar></tda-profile-avatar>
+	</div>
+</div>
+<!-- *************************** DETALLES DEL PERFIL *************************** -->
+<!-- *********************************************************************** -->
+<tda-profile-details></tda-profile-details>
+<!-- *************************** TAREAS CREADAS *************************** -->
+<!-- *********************************************************************** -->
+<tda-tasks></tda-tasks>
+<!-- *************************** CREAR NUEVA TAREA *************************** -->
+<!-- *********************************************************************** -->
+<tda-panel-modal [@swipeToTop]="state" *ngIf="openModalCreateTask" [(visible)]="openModalCreateTask">
+	<tda-create-task class="col-xs-11 col-sm-6"></tda-create-task>
+</tda-panel-modal>

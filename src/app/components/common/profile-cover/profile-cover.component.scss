@@ -1,0 +1,31 @@
+
+header {
+  position: relative;
+}
+
+.content{
+    //height:580px;
+   // padding-top:60px;
+   height:250px;
+   -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+   &.edit-details{
+      height:100px;
+   }
+}
+
+.icon-close{
+  font-size: 30px;
+  color: #ecedeb;
+  height: 50px;
+  width: 50px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+
+}

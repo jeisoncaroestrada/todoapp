@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo APP</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/fadvicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <style>
+  .overlay-loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    right: 0;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: rgba(255, 255, 255, 0.1); }
+    .overlay-loading .overlay-container {
+      -webkit-animation: loaderEnter 0.3s linear;
+      -moz-animation: loaderEnter 0.3s linear;
+      animation: loaderEnter 0.3s linear;
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      .overlay-loading .overlay-container .loader {
+        width: 150px;
+        height: 150px;
+        border: 10px solid #eee;
+        border-radius: 50%;
+        border-top: 5px solid #666;
+        -webkit-animation: loaderAnimation 1s infinite linear;
+        -moz-animation: loaderAnimation 1s infinite linear;
+        animation: loaderAnimation 1s infinite linear;
+        position: absolute; }
+        .overlay-loading .overlay-container .loader-text {
+          color: #666;
+          margin-top: -10px;
+          font-size: 16px;
+          width: 150px !important;
+          text-align: center;
+          line-height: normal; }
+          .overlay-loading .icon-callback-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            font-size: 100px;
+            background: -moz-linear-gradient(45deg, lime 0%, cyan 100%);
+            /* ff3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, lime), color-stop(100%, cyan));
+            /* safari4+,chrome */
+            background: -webkit-linear-gradient(45deg, lime 0%, cyan 100%);
+            /* safari5.1+,chrome10+ */
+            background: -o-linear-gradient(45deg, lime 0%, cyan 100%);
+            /* opera 11.10+ */
+            background: -ms-linear-gradient(45deg, lime 0%, cyan 100%);
+            /* ie10+ */
+            background: linear, 45deg, lime 0%, cyan 100%;
+          /* w3c */ }
+          .overlay-loading .icon-callback-container .inner-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            font-size: 100px;
+            text-align: center;
+            background: #fff; }
+            .overlay-loading .icon-callback-container i {
+              background: -moz-linear-gradient(45deg, lime 0%, cyan 100%);
+              /* ff3.6+ */
+              background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, lime), color-stop(100%, cyan));
+              /* safari4+,chrome */
+              background: -webkit-linear-gradient(45deg, lime 0%, cyan 100%);
+              /* safari5.1+,chrome10+ */
+              background: -o-linear-gradient(45deg, lime 0%, cyan 100%);
+              /* opera 11.10+ */
+              background: -ms-linear-gradient(45deg, lime 0%, cyan 100%);
+              /* ie10+ */
+              background: linear, 45deg, lime 0%, cyan 100%;
+              /* w3c */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#00ff00',GradientType=1 );
+              /* ie6-9 */
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent; }
+
+              .center-items {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center; }
+
+                .wid-100 {
+                  width: 100%; }
+
+    </style>
+  </head>
+  <body class="theme2">
+      <app-root>
+        <!-- LOADING -->
+        <div class="overlay-loading">
+          <div class="overlay-container">
+            <div class="wid-100 center-items">
+              <div class="wid-100">
+                <div class="wid-100 center-items">
+                 <div class="loader">
+                 </div>
+                </div>
+                <div class="wid-100 center-items">
+                  <p class="loader-text">Cargando...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </app-root>
+  </body>
+</html>

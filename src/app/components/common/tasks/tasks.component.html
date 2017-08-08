@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="no-tasks-container center-items">
+		<div *ngIf="tasks.length <= 0">
+			<div class="wid-100 center-items">
+				<i class="animation-all icon-add mdi mdi-calendar-remove" ></i>
+			</div>
+			<p>No tiene tareas creadas</p>	
+			<div class="wid-100 center-items">
+				<span>
+					<button class="btn btn-pill btn-color-1" (click)="openModalTask()">Crear tarea</button>
+				</span>
+			</div>
+		</div>
+    </div>
+	<!-- *************************** DATOS CREADOS *************************** -->
+     <div *ngIf="tasks.length > 0" class="details-created-list">
+        <p class="fc-smooth">Estas son tus tareas creadas.</p>
+        <!-- ================== MENSAJES DE ERROR ==================== -->
+        <div *ngIf="error" class="alert alert-danger">
+            <!-- <ul *ngFor="let e of error">
+              <li>{{e}}</li>
+            </ul> -->
+            <span>{{error}}</span>
+            <i class="icon-close mdi mdi-close " (click)="closeError()"></i>
+        </div>
+        <div *ngIf="success" class="alert alert-success">
+            <span>{{success}}</span>
+            <i class="icon-close mdi mdi-close " (click)="closeSuccess()"></i>
+        </div>
+        <!-- *************************** TAREAS CREADAS *************************** -->
+        <div *ngFor="let i of tasks" class="detail" [@slideToRight]='state'>
+            <div class="wid-100">
+                <div class="form-group">
+                    <!-- ************************ INPUTS ************************ -->
+                     <!-- ******************** INPUT DE NOMBRE ****************** -->
+                    <input [disabled]="!i.editing" type="text" class="form-control input-type" name="name" [(ngModel)]="i.name" #name="ngModel" required  placeholder="Tipo de contacto">
+                    <!-- ************************ DROPDOWN ************************ -->
+                    <div class="nativeDropdown input-type" >
+                        <div class="selectDropdown hover-bd-1" [ngClass]="{'disabled': !i.editing}">
+                            <select [(ngModel)]="i.priority" [ngModelOptions]="{standalone: true}" id="type" name="type" class="">
+                                <option *ngFor="let p of priorities" [ngValue]="p">{{p}}</option>
+                            </select>
+                            <div class="custom-select" [ngClass]="{'disabled': !i.editing}"aria-hidden="true">{{i.priority ? i.priority : 'Prioridad'}}</div>
+                        </div>
+                    </div>
+                    <!-- ******************** INPUT DE FECHA ****************** -->
+                    <input [disabled]="!i.editing" type="text" class="form-control input-value" name="value" [(ngModel)]="i.due_date" #value="ngModel" required  placeholder="Valor del contacto">
+                    <!-- ************************ ACCIONES ************************ -->
+                    <div class="actions center-items">
+                        <span [hidden]="i.editing" class="edit fc-1" (click)="startEdit(i)">Editar</span>
+                        <span [hidden]="i.editing" class="delete fc-1" (click)="confirmDelete(i)">Eliminar</span>
+                        <span [hidden]="!i.editing" class="save fc-1" (click)="update(i)">Guardar</span>
+                        <span [hidden]="!i.editing" (click)="cancelEdit(i)" class="cancel fc-1">Cancelar</span>
+                    </div>
+                </div>
+            </div> 
+            <!-- ************************ CONFIRMAR BORRAR ************************ -->
+            <div [@slideInTop]='state' class="delete-confirmation center-items" *ngIf="i.delete">
+                <div class="wid-100 center-items-xs-up">
+                    <div class="form-group col-xs-12 col-md-2">
+                        <button [disabled]="loading" (click)="delete(i)" class="btn btn-primary btn-rounded btn-slim-xs wid-100">{{loading ? 'Procesando...' : 'Eliminar'}}</button>
+                    </div>
+                    <div class="form-group col-xs-12 col-md-2">
+                        <button [disabled]="loading" (click)="cancelDelete(i)" class="btn btn-primary btn-rounded btn-slim-xs clear negative wid-100">{{loading ? 'Procesando...' : 'Cancelar'}}</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************ LOADER ************************ -->
+            <tda-loader class="fadeOut" [position]="'absolute'" [background]="'rgba(255,255,255,0.7)'"  *ngIf="i.loading"></tda-loader> 
+        </div>
+        <!-- ************************ LOADER ************************ -->
+    </div>
+        <tda-loader class="fadeOut" [position]="'absolute'" [background]="'rgba(255,255,255,0.7)'" [text]="'Cargando tareas...'" *ngIf="loading"></tda-loader> 
+</div>

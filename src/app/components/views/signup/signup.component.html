@@ -1,0 +1,63 @@
+<div id="signup">
+    <div id="wrap" class="gradient-2-1 center-items">
+        <div class="container-wrap center-items">
+            <div class="content animation-all" [ngClass]="{'step-2': step == 2, 'step-1': step == 1}">
+                <div class="header center-items">
+                    <h1  class="form-brand-text animation-all">{{mainTitle}}</h1>
+                </div>
+                <div class="body">
+                    <div class="panel-1">
+                        <h3 class="fc-1 center-text">Regístrate</h3>
+                        <div class="row">
+                            <div *ngIf="error" class="alert alert-danger">
+                                 <!-- <ul *ngFor="let e of error">
+                                  <li>{{e}}</li>
+                                </ul> -->
+                                <span>{{error}}</span>
+                                <i class="icon-close mdi mdi-close " (click)="closeError()"></i>
+                            </div>
+                            <div *ngIf="success" class="alert alert-success">
+                                <span>{{success}}</span>
+                                <i class="icon-close mdi mdi-close " (click)="closeSuccess()"></i>
+                            </div>
+                            <form name="form" (ngSubmit)="signup()" #f="ngForm" novalidate>
+                                <div class="col-xs-12">
+                                    <div class="form-group icon email pos-relative">
+                                        <input [disabled]="loading" type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required  placeholder="Correo electónico">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">    
+                                    <div class="form-group icon password pos-relative">
+                                        <input [disabled]="loading" type="{{passwordType}}" class="form-control password-field" name="password" [(ngModel)]="model.password" #password="ngModel" required placeholder="Contraseña">
+                                        <i *ngIf="passwordType == 'password'" title="Mostrar contraseña" class="icon-show-password mdi mdi-eye " (click)="switchPassword()"></i>
+                                        <i *ngIf="passwordType == 'text'" title="Ocultar contraseña" class="icon-show-password mdi mdi-eye-off " (click)="switchPassword()"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">    
+                                    <div class="form-group icon password pos-relative">
+                                        <input [disabled]="loading" type="{{passwordType}}" class="form-control password-field" name="password_confirmation" [(ngModel)]="model.password_confirmation" #password_confirmation="ngModel" required placeholder="Confirma tu contraseña">
+                                        <i *ngIf="passwordType == 'password'" title="Mostrar contraseña" class="icon-show-password mdi mdi-eye " (click)="switchPassword()"></i>
+                                        <i *ngIf="passwordType == 'text'" title="Ocultar contraseña" class="icon-show-password mdi mdi-eye-off " (click)="switchPassword()"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <button [disabled]="loading" class="btn btn-primary wid-100">{{loading ? 'Procesando...' : 'Registrarme'}}</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- fin form -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- footer -->
+                <div class="footer">
+                    <div class="new-account">
+                        <a (click)="goTo('/login')">Ya tienes una cuenta? <b> Inicia sesión aquí!</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

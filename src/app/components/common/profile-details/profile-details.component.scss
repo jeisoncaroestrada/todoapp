@@ -1,0 +1,46 @@
+// *****************************************************************************
+// variables
+// *****************************************************************************
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+
+.icon-edit-container{
+	position: relative;
+
+	.icon-add{
+		font-size: 25px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		color: #a9a9a9;
+		cursor: pointer;
+		opacity: 0.7;
+		text-align: center;
+	  	line-height: 50px;
+	  	border-radius: 50%;
+	  	height: 50px;
+  		width: 50px;
+
+  		@media(max-width: 350px){
+  			top: -40px;
+  			right: 10px;
+		}
+
+		&:hover{
+			opacity: 1;
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+}
+
+.name-container{
+	font: 400 24px/32px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;;
+    overflow: hidden;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 15px;
+}
+
+

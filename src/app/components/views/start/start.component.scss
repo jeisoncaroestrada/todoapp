@@ -1,0 +1,25 @@
+tda-profile-avatar{
+    position: relative;
+}
+
+tda-accordion-form{
+	position: absolute;
+	width: 100%;
+}
+
+.avatar-container{
+	margin-top: -80px;
+
+    .avatar{
+    	height: 150px;
+    	width: 150px;
+    }
+}
+
+tda-edit-cover-modal,tda-edit-avatar-modal{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 1050;
+	background: #ffffff;
+}

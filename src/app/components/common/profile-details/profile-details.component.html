@@ -1,0 +1,16 @@
+<div class="wid-100">
+	<!-- icono para agregar una tarea nueva -->
+	<div class="icon-edit-container">
+		<i (click)="openModalTask()" title="Agregar tarea" class="animation-all icon-add mdi mdi-plus" ></i>
+	</div>		
+	<div class="name-container center-items">
+		<p>
+			<!-- usuario logueado -->
+			<span *ngIf="profile">{{profile['user']}}</span>
+			<!-- boton cerrar sesión -->
+			<span>
+				<button class="btn btn-pill" (click)="logout()">Cerrar sesión</button>
+			</span>
+		</p>
+	</div>
+</div>
